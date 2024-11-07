@@ -81,8 +81,12 @@ GEM
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     base64 (0.2.0)
+<<<<<<< HEAD
     bcrypt (3.1.20)
     benchmark (0.4.0)
+=======
+    benchmark (0.3.0)
+>>>>>>> 387ad21 (Files created)
     bigdecimal (3.1.8)
     bindex (0.8.1)
     bootsnap (1.18.4)
@@ -104,6 +108,7 @@ GEM
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
+<<<<<<< HEAD
     devise (4.9.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -125,6 +130,12 @@ GEM
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashie (5.0.0)
+=======
+    drb (2.2.1)
+    erubi (1.13.0)
+    globalid (1.2.1)
+      activesupport (>= 6.1)
+>>>>>>> 387ad21 (Files created)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.0.3)
@@ -138,9 +149,12 @@ GEM
     jbuilder (2.13.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+<<<<<<< HEAD
     json (2.8.2)
     jwt (2.9.3)
       base64
+=======
+>>>>>>> 387ad21 (Files created)
     logger (1.6.1)
     loofah (2.23.1)
       crass (~> 1.0.2)
@@ -154,6 +168,7 @@ GEM
     matrix (0.4.2)
     mini_mime (1.1.5)
     minitest (5.25.1)
+<<<<<<< HEAD
     msgpack (1.7.5)
     multi_json (1.15.0)
     multi_xml (0.7.1)
@@ -162,6 +177,11 @@ GEM
     net-http (0.5.0)
       uri
     net-imap (0.5.1)
+=======
+    msgpack (1.7.3)
+    mutex_m (0.2.0)
+    net-imap (0.5.0)
+>>>>>>> 387ad21 (Files created)
       date
       net-protocol
     net-pop (0.1.2)
@@ -171,6 +191,7 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.4)
+<<<<<<< HEAD
     nokogiri (1.16.7-x64-mingw-ucrt)
       racc (~> 1.4)
     nokogiri (1.16.7-x86_64-linux)
@@ -198,6 +219,20 @@ GEM
       actionpack (>= 4.2)
       omniauth (~> 2.0)
     orm_adapter (0.5.0)
+=======
+    nokogiri (1.16.7-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.7-arm-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.7-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.7-x86-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.7-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.7-x86_64-linux)
+      racc (~> 1.4)
+>>>>>>> 387ad21 (Files created)
     psych (5.2.0)
       stringio
     public_suffix (6.0.1)
@@ -205,15 +240,22 @@ GEM
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.1.8)
+<<<<<<< HEAD
     rack-protection (4.1.1)
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
       rack (>= 3.0.0, < 4)
+=======
+>>>>>>> 387ad21 (Files created)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
       rack (>= 1.3)
+<<<<<<< HEAD
     rackup (2.2.1)
+=======
+    rackup (2.2.0)
+>>>>>>> 387ad21 (Files created)
       rack (>= 3)
     rails (7.1.5)
       actioncable (= 7.1.5)
@@ -245,6 +287,7 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rake (13.2.1)
+<<<<<<< HEAD
     rdoc (6.8.1)
       psych (>= 4.0.0)
     regexp_parser (2.9.2)
@@ -256,12 +299,23 @@ GEM
     rexml (3.3.9)
     rubyzip (2.3.2)
     securerandom (0.3.2)
+=======
+    rdoc (6.7.0)
+      psych (>= 4.0.0)
+    regexp_parser (2.9.2)
+    reline (0.5.10)
+      io-console (~> 0.5)
+    rexml (3.3.9)
+    rubyzip (2.3.2)
+    securerandom (0.3.1)
+>>>>>>> 387ad21 (Files created)
     selenium-webdriver (4.26.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+<<<<<<< HEAD
     signet (0.19.0)
       addressable (~> 2.8)
       faraday (>= 0.17.5, < 3.a)
@@ -270,6 +324,8 @@ GEM
     snaky_hash (2.0.1)
       hashie
       version_gem (~> 1.1, >= 1.1.1)
+=======
+>>>>>>> 387ad21 (Files created)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -277,8 +333,21 @@ GEM
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       sprockets (>= 3.0.0)
+<<<<<<< HEAD
     sqlite3 (2.3.0-x64-mingw-ucrt)
     sqlite3 (2.3.0-x86_64-linux-gnu)
+=======
+    sqlite3 (2.2.0-aarch64-linux-gnu)
+    sqlite3 (2.2.0-aarch64-linux-musl)
+    sqlite3 (2.2.0-arm-linux-gnu)
+    sqlite3 (2.2.0-arm-linux-musl)
+    sqlite3 (2.2.0-arm64-darwin)
+    sqlite3 (2.2.0-x86-linux-gnu)
+    sqlite3 (2.2.0-x86-linux-musl)
+    sqlite3 (2.2.0-x86_64-darwin)
+    sqlite3 (2.2.0-x86_64-linux-gnu)
+    sqlite3 (2.2.0-x86_64-linux-musl)
+>>>>>>> 387ad21 (Files created)
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
     stringio (3.1.2)
@@ -289,12 +358,15 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+<<<<<<< HEAD
     tzinfo-data (1.2024.2)
       tzinfo (>= 1.0.0)
     uri (1.0.2)
     version_gem (1.1.4)
     warden (1.2.9)
       rack (>= 2.0.9)
+=======
+>>>>>>> 387ad21 (Files created)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -309,13 +381,30 @@ GEM
     zeitwerk (2.7.1)
 
 PLATFORMS
+<<<<<<< HEAD
   x64-mingw-ucrt
   x86_64-linux
+=======
+  aarch64-linux
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  arm-linux
+  arm-linux-gnu
+  arm-linux-musl
+  arm64-darwin
+  x86-linux
+  x86-linux-gnu
+  x86-linux-musl
+  x86_64-darwin
+  x86_64-linux-gnu
+  x86_64-linux-musl
+>>>>>>> 387ad21 (Files created)
 
 DEPENDENCIES
   bootsnap
   capybara
   debug
+<<<<<<< HEAD
   devise
   dotenv-rails
   importmap-rails
@@ -327,6 +416,13 @@ DEPENDENCIES
   rails (~> 7.1.4, >= 7.1.4.2)
   selenium-webdriver
   signet
+=======
+  importmap-rails
+  jbuilder
+  puma (>= 5.0)
+  rails (~> 7.1.4, >= 7.1.4.2)
+  selenium-webdriver
+>>>>>>> 387ad21 (Files created)
   sprockets-rails
   sqlite3 (>= 1.4)
   stimulus-rails
