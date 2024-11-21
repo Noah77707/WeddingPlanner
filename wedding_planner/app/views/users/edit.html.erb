@@ -2,6 +2,37 @@
 
 <%= render "form", user: @user %>
 
+
+<div class="calendar-list">
+  <h3>Calendars</h3>
+  <% if @calendar_list && @calendar_list.items.present? %>
+    <% @calendar_list.items.each do |calendar| %>
+      <div class="calendar-item">
+        <span><%= calendar.summary %></span> (<%= calendar.id %>)
+
+        <!-- Form to add new event for this calendar -->
+        <%= form_tag new_event_url(calendar_id: calendar.id) do %>
+          <%= submit_tag 'Add event' %>
+        <% end %>
+      </div>
+    <% end %>
+  <% else %>
+    <p>No calendars available.</p>
+  <% end %>
+</div>
+
+<div class="event-list">
+  <h3>Events</h3>
+  <% if @event_list && @event_list.items.present? %>
+    <% @event_list.items.each do |event| %>
+      <div class="event-item">
+        <span><%= event.summary %></span> (<%= event.id %>)
+      </div>
+    <% end %>
+  <% else %>
+    <p>No events available.</p>
+  <% end %>
+</div>
 <br>
 
 <div>

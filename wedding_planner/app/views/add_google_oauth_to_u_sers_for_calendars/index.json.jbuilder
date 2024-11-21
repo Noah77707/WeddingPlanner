@@ -1,0 +1,1 @@
+json.array! @add_google_oauth_to_u_sers_for_calendars, partial: "add_google_oauth_to_u_sers_for_calendars/add_google_oauth_to_u_sers_for_calendar", as: :add_google_oauth_to_u_sers_for_calendar

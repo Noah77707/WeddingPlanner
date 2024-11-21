@@ -51,6 +51,7 @@ gem "devise"
 gem "omniauth"
 gem "omniauth-google-oauth2"
 gem "omniauth-rails_csrf_protection"
+gem "signet"
 
 >>>>>>> e19980011627199174acaeb636585fed8583f5cb
 group :development, :test do

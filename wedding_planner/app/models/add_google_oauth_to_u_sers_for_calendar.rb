@@ -1,0 +1,2 @@
+class AddGoogleOauthToUSersForCalendar < ApplicationRecord
+end

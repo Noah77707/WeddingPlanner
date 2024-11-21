@@ -1,0 +1,17 @@
+<%= form_with(model: add_google_oauth_to_u_sers_for_calendar) do |form| %>
+  <% if add_google_oauth_to_u_sers_for_calendar.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(add_google_oauth_to_u_sers_for_calendar.errors.count, "error") %> prohibited this add_google_oauth_to_u_sers_for_calendar from being saved:</h2>
+
+      <ul>
+        <% add_google_oauth_to_u_sers_for_calendar.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
