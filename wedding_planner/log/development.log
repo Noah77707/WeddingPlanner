@@ -2809,3 +2809,2758 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 108ms (Views: 95.2ms | ActiveRecord: 0.3ms | Allocations: 2171)
 
 
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /workspace/wedding_planner/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (2.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /workspace/wedding_planner/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /workspace/wedding_planner/config/environment.rb:5)
+Started GET "/" for 172.17.0.1 at 2024-11-21 21:30:56 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 172.17.0.1 at 2024-11-21 21:30:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 7.3ms | Allocations: 265)
+  Rendered users/_user.html.erb (Duration: 5.7ms | Allocations: 293)
+  Rendered users/index.html.erb within layouts/application (Duration: 128.9ms | Allocations: 18585)
+  Rendered users/index.html.erb within layouts/application (Duration: 135.6ms | Allocations: 19209)
+  Rendered layout layouts/application.html.erb (Duration: 1322.0ms | Allocations: 81181)
+Completed 200 OK in 1677ms (Views: 1319.1ms | ActiveRecord: 31.9ms | Allocations: 87839)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 1324.4ms | Allocations: 87329)
+Completed 200 OK in 1552ms (Views: 1365.3ms | ActiveRecord: 7.9ms | Allocations: 91127)
+
+
+Started GET "/users/3" for 172.17.0.1 at 2024-11-21 21:31:01 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 658)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 1761)
+Completed 200 OK in 121ms (Views: 30.6ms | ActiveRecord: 0.6ms | Allocations: 3185)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:31:02 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 35.4ms | Allocations: 2113)
+  Rendered users/edit.html.erb within layouts/application (Duration: 46.7ms | Allocations: 2439)
+  Rendered layout layouts/application.html.erb (Duration: 94.1ms | Allocations: 3542)
+Completed 200 OK in 120ms (Views: 95.4ms | ActiveRecord: 0.5ms | Allocations: 4213)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 21:31:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 813)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 1921)
+Completed 200 OK in 38ms (Views: 27.3ms | ActiveRecord: 0.5ms | Allocations: 2182)
+
+
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 21:31:43 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CalendarsController#callback as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 544)
+
+
+  
+NameError (uninitialized constant CalendarsController::Signet):
+  
+app/controllers/calendars_controller.rb:10:in `callback'
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /workspace/wedding_planner/config/environment.rb:5)
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 21:33:10 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CalendarsController#callback as HTML
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 1394)
+
+
+  
+NameError (uninitialized constant Signet::OAuth2):
+  
+app/controllers/calendars_controller.rb:10:in `callback'
+Started GET "/call" for 172.17.0.1 at 2024-11-21 21:33:15 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/call"):
+  
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 21:33:19 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CalendarsController#callback as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 507)
+
+
+  
+NameError (uninitialized constant Signet::OAuth2):
+  
+app/controllers/calendars_controller.rb:10:in `callback'
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 21:36:00 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CalendarsController#callback as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 507)
+
+
+  
+NameError (uninitialized constant Signet::OAuth2):
+  
+app/controllers/calendars_controller.rb:10:in `callback'
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 21:36:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CalendarsController#callback as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 507)
+
+
+  
+NameError (uninitialized constant Signet::OAuth2):
+  
+app/controllers/calendars_controller.rb:10:in `callback'
+Started GET "/" for 172.17.0.1 at 2024-11-21 21:37:20 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 3.2ms | Allocations: 234)
+  Rendered users/index.html.erb within layouts/application (Duration: 67.0ms | Allocations: 13262)
+  Rendered layout layouts/application.html.erb (Duration: 753.8ms | Allocations: 45943)
+Completed 200 OK in 809ms (Views: 729.7ms | ActiveRecord: 34.5ms | Allocations: 48278)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 21:37:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.0ms | Allocations: 1005)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 62.7ms | Allocations: 3463)
+  Rendered layout layouts/application.html.erb (Duration: 96.1ms | Allocations: 4648)
+Completed 200 OK in 126ms (Views: 109.3ms | ActiveRecord: 0.0ms | Allocations: 6388)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 21:37:25 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=6430af4db92dee36305968d439165f3b663578bc6d8f390d&code=4%2F0AeanS0brJt0x3D1-6x0Am-fqJ6oyekSU4mgXRFZrBA1JK1wdvfv5VIs5t6jcygr5XWeXcg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 21:37:25 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"6430af4db92dee36305968d439165f3b663578bc6d8f390d", "code"=>"4/0AeanS0brJt0x3D1-6x0Am-fqJ6oyekSU4mgXRFZrBA1JK1wdvfv5VIs5t6jcygr5XWeXcg", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 52ms (ActiveRecord: 3.1ms | Allocations: 2821)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 21:37:26 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (12.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 36.0ms | Allocations: 1614)
+  Rendered layout layouts/application.html.erb (Duration: 70.1ms | Allocations: 2732)
+Completed 200 OK in 90ms (Views: 57.3ms | ActiveRecord: 14.1ms | Allocations: 2993)
+
+
+Started GET "/users/3" for 172.17.0.1 at 2024-11-21 21:37:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 674)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 1777)
+Completed 200 OK in 49ms (Views: 29.2ms | ActiveRecord: 0.4ms | Allocations: 3192)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:37:33 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.6ms | Allocations: 1554)
+  Rendered users/edit.html.erb within layouts/application (Duration: 30.8ms | Allocations: 2170)
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 3273)
+Completed 200 OK in 76ms (Views: 56.0ms | ActiveRecord: 0.4ms | Allocations: 3931)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:38:42 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.9ms | Allocations: 1447)
+  Rendered users/edit.html.erb within layouts/application (Duration: 15.7ms | Allocations: 2061)
+  Rendered layout layouts/application.html.erb (Duration: 177.4ms | Allocations: 16109)
+Completed 200 OK in 229ms (Views: 185.4ms | ActiveRecord: 35.9ms | Allocations: 24060)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 21:38:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 3.5ms | Allocations: 191)
+  Rendered users/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 2395)
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 3502)
+Completed 200 OK in 73ms (Views: 45.1ms | ActiveRecord: 0.9ms | Allocations: 3848)
+
+
+Started GET "/users/3" for 172.17.0.1 at 2024-11-21 21:38:46 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 656)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 1774)
+Completed 200 OK in 56ms (Views: 30.3ms | ActiveRecord: 0.5ms | Allocations: 2459)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:38:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.1ms | Allocations: 942)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1046)
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 2158)
+Completed 200 OK in 61ms (Views: 46.2ms | ActiveRecord: 0.4ms | Allocations: 2754)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:39:09 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.4ms | Allocations: 1405)
+  Rendered users/edit.html.erb within layouts/application (Duration: 20.7ms | Allocations: 2019)
+  Rendered layout layouts/application.html.erb (Duration: 228.5ms | Allocations: 16069)
+Completed 200 OK in 277ms (Views: 236.9ms | ActiveRecord: 30.4ms | Allocations: 24008)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:41:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.8ms | Allocations: 1438)
+  Rendered users/edit.html.erb within layouts/application (Duration: 18.5ms | Allocations: 2052)
+  Rendered layout layouts/application.html.erb (Duration: 167.3ms | Allocations: 16120)
+Completed 200 OK in 220ms (Views: 175.6ms | ActiveRecord: 37.3ms | Allocations: 23996)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 21:41:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 4.7ms | Allocations: 191)
+  Rendered users/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 2404)
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 3519)
+Completed 200 OK in 58ms (Views: 41.9ms | ActiveRecord: 1.1ms | Allocations: 3862)
+
+
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /workspace/wedding_planner/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /workspace/wedding_planner/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAddGoogleOauthToUSersForCalendars (20241121214414)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241121214414') RETURNING "version"[0m
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /workspace/wedding_planner/config/environment.rb:5)
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:45:54 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 29.5ms | Allocations: 3559)
+  Rendered users/edit.html.erb within layouts/application (Duration: 40.2ms | Allocations: 4359)
+  Rendered layout layouts/application.html.erb (Duration: 714.7ms | Allocations: 37039)
+Completed 200 OK in 911ms (Views: 735.2ms | ActiveRecord: 60.1ms | Allocations: 56194)
+
+
+Started PATCH "/users/3" for 172.17.0.1 at 2024-11-21 21:45:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Noah", "last_name"=>"Hoepfinger", "partner"=>"Izzy"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 13ms (ActiveRecord: 0.4ms | Allocations: 1863)
+
+
+Started GET "/users/3" for 172.17.0.1 at 2024-11-21 21:45:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 3.5ms | Allocations: 206)
+  Rendered users/show.html.erb within layouts/application (Duration: 18.2ms | Allocations: 1166)
+  Rendered layout layouts/application.html.erb (Duration: 48.1ms | Allocations: 2269)
+Completed 200 OK in 67ms (Views: 49.2ms | ActiveRecord: 0.4ms | Allocations: 2997)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 21:45:59 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2257)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 3364)
+Completed 200 OK in 47ms (Views: 30.9ms | ActiveRecord: 0.8ms | Allocations: 3714)
+
+
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /workspace/wedding_planner/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /workspace/wedding_planner/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAddGoogleOauthToUSersForCalendars (20241121214414)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20241121214414'[0m
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /workspace/wedding_planner/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAddGoogleOauthToUSersForCalendars (20241121214414)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "users" ADD "google_access_token" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "google_refresh_token" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "google_token_expires_at" datetime(6)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241121214414') RETURNING "version"[0m
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /workspace/wedding_planner/config/environment.rb:5)
+Started GET "/users" for 172.17.0.1 at 2024-11-21 21:55:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 3.6ms | Allocations: 233)
+  Rendered users/index.html.erb within layouts/application (Duration: 77.3ms | Allocations: 18892)
+  Rendered layout layouts/application.html.erb (Duration: 1024.5ms | Allocations: 51455)
+Completed 200 OK in 1143ms (Views: 1008.8ms | ActiveRecord: 37.2ms | Allocations: 57051)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2024-11-21 21:55:20 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Completed 303 See Other in 30ms (ActiveRecord: 0.7ms | Allocations: 2957)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 21:55:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.8ms | Allocations: 986)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 53.9ms | Allocations: 3425)
+  Rendered layout layouts/application.html.erb (Duration: 86.4ms | Allocations: 4595)
+Completed 200 OK in 112ms (Views: 98.7ms | ActiveRecord: 0.0ms | Allocations: 6188)
+
+
+Started GET "/users/sign_up" for 172.17.0.1 at 2024-11-21 21:55:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/password/new" for 172.17.0.1 at 2024-11-21 21:55:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.7ms | Allocations: 229)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 315)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.7ms | Allocations: 1850)
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 3002)
+Completed 200 OK in 69ms (Views: 58.7ms | ActiveRecord: 0.0ms | Allocations: 4186)
+
+
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 357)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1111)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 2221)
+Completed 200 OK in 56ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 3093)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 21:55:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=90c34f0dca736ce2e5a33508ae48eb2f0a0eab839018028a&code=4%2F0AeanS0ZmzXicUED4zNdQ9fBSMLgehLgG5oHpxI43ju77L8AquB6YDzZRpiKQBjiqptvj2A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 21:55:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"90c34f0dca736ce2e5a33508ae48eb2f0a0eab839018028a", "code"=>"4/0AeanS0ZmzXicUED4zNdQ9fBSMLgehLgG5oHpxI43ju77L8AquB6YDzZRpiKQBjiqptvj2A", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 0.8ms | Allocations: 1081)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 21:55:25 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1471)
+  Rendered layout layouts/application.html.erb (Duration: 46.1ms | Allocations: 2578)
+Completed 200 OK in 62ms (Views: 46.4ms | ActiveRecord: 1.1ms | Allocations: 2835)
+
+
+Started GET "/users/3" for 172.17.0.1 at 2024-11-21 21:56:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 632)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 1735)
+Completed 200 OK in 48ms (Views: 28.6ms | ActiveRecord: 0.6ms | Allocations: 3150)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:56:07 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.5ms | Allocations: 1557)
+  Rendered users/edit.html.erb within layouts/application (Duration: 13.7ms | Allocations: 2176)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 3294)
+Completed 200 OK in 68ms (Views: 37.5ms | ActiveRecord: 0.4ms | Allocations: 3955)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:56:08 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.1ms | Allocations: 939)
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1043)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 2148)
+Completed 200 OK in 38ms (Views: 27.0ms | ActiveRecord: 0.4ms | Allocations: 2745)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:56:59 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.5ms | Allocations: 1411)
+  Rendered users/edit.html.erb within layouts/application (Duration: 32.6ms | Allocations: 2025)
+  Rendered layout layouts/application.html.erb (Duration: 202.4ms | Allocations: 16073)
+Completed 200 OK in 259ms (Views: 216.5ms | ActiveRecord: 36.9ms | Allocations: 24903)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 21:57:01 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 3.3ms | Allocations: 191)
+  Rendered users/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 2400)
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 3507)
+Completed 200 OK in 54ms (Views: 38.9ms | ActiveRecord: 0.7ms | Allocations: 3849)
+
+
+Started GET "/users/edit" for 172.17.0.1 at 2024-11-21 21:57:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.6ms | Allocations: 212)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 15.3ms | Allocations: 2026)
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 3200)
+Completed 200 OK in 74ms (Views: 62.7ms | ActiveRecord: 0.5ms | Allocations: 5614)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2024-11-21 21:57:05 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Completed 303 See Other in 16ms (ActiveRecord: 0.7ms | Allocations: 2116)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 21:57:05 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.1ms | Allocations: 936)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 19.7ms | Allocations: 2090)
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 3196)
+Completed 200 OK in 64ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 4253)
+
+
+Started GET "/users/password/new" for 172.17.0.1 at 2024-11-21 21:57:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 357)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1111)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 2233)
+Completed 200 OK in 47ms (Views: 31.9ms | ActiveRecord: 0.0ms | Allocations: 3116)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 21:57:07 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=ed7dc42282a4b617d181799563c6e29580031b030eef3f00&code=4%2F0AeanS0bUfE8uPERbXtwHUi8I8Q5pyFi1goFAStHgxir777tyErhg8GTJ4P1RoqOsWhV1jQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 21:57:07 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"ed7dc42282a4b617d181799563c6e29580031b030eef3f00", "code"=>"4/0AeanS0bUfE8uPERbXtwHUi8I8Q5pyFi1goFAStHgxir777tyErhg8GTJ4P1RoqOsWhV1jQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 0.5ms | Allocations: 995)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 21:57:09 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1487)
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 2594)
+Completed 200 OK in 40ms (Views: 29.8ms | ActiveRecord: 1.2ms | Allocations: 2851)
+
+
+Started GET "/users/3" for 172.17.0.1 at 2024-11-21 21:57:10 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 631)
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 1735)
+Completed 200 OK in 92ms (Views: 57.2ms | ActiveRecord: 0.5ms | Allocations: 2416)
+
+
+Started GET "/users/3" for 172.17.0.1 at 2024-11-21 21:57:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 451)
+  Rendered layout layouts/application.html.erb (Duration: 63.3ms | Allocations: 1554)
+Completed 200 OK in 77ms (Views: 64.3ms | ActiveRecord: 0.4ms | Allocations: 2150)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:57:12 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.4ms | Allocations: 931)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1035)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 2138)
+Completed 200 OK in 94ms (Views: 37.2ms | ActiveRecord: 1.1ms | Allocations: 2741)
+
+
+Started PATCH "/users/3" for 172.17.0.1 at 2024-11-21 21:57:15 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Noah", "last_name"=>"Hoepfinger", "partner"=>"Izzy"}, "commit"=>"Update User", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 19ms (ActiveRecord: 0.4ms | Allocations: 1368)
+
+
+Started GET "/users/3" for 172.17.0.1 at 2024-11-21 21:57:15 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 523)
+  Rendered layout layouts/application.html.erb (Duration: 40.3ms | Allocations: 1626)
+Completed 200 OK in 55ms (Views: 42.1ms | ActiveRecord: 0.4ms | Allocations: 2268)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 21:57:16 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.3ms | Allocations: 942)
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1046)
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 2150)
+Completed 200 OK in 56ms (Views: 43.1ms | ActiveRecord: 0.5ms | Allocations: 2746)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 21:57:18 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1487)
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 2594)
+Completed 200 OK in 78ms (Views: 45.6ms | ActiveRecord: 1.0ms | Allocations: 2849)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 21:58:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/_user.html.erb (Duration: 3.1ms | Allocations: 203)
+  Rendered users/index.html.erb within layouts/application (Duration: 46.0ms | Allocations: 9192)
+  Rendered layout layouts/application.html.erb (Duration: 171.5ms | Allocations: 23258)
+Completed 200 OK in 200ms (Views: 139.6ms | ActiveRecord: 40.7ms | Allocations: 24418)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 21:58:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/_user.html.erb (Duration: 7.6ms | Allocations: 203)
+  Rendered users/index.html.erb within layouts/application (Duration: 80.9ms | Allocations: 9136)
+  Rendered layout layouts/application.html.erb (Duration: 329.2ms | Allocations: 23020)
+Completed 200 OK in 367ms (Views: 287.4ms | ActiveRecord: 59.1ms | Allocations: 24175)
+
+
+Started GET "/users/edit" for 172.17.0.1 at 2024-11-21 21:58:16 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.8ms | Allocations: 213)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 15.3ms | Allocations: 1983)
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 3157)
+Completed 200 OK in 61ms (Views: 49.6ms | ActiveRecord: 0.4ms | Allocations: 5571)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 21:58:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 3.3ms | Allocations: 203)
+  Rendered users/index.html.erb within layouts/application (Duration: 43.7ms | Allocations: 9185)
+  Rendered layout layouts/application.html.erb (Duration: 204.1ms | Allocations: 23251)
+Completed 200 OK in 247ms (Views: 177.4ms | ActiveRecord: 35.7ms | Allocations: 24411)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2024-11-21 21:58:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Completed 303 See Other in 12ms (ActiveRecord: 0.4ms | Allocations: 2127)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 21:58:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.4ms | Allocations: 945)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 2167)
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 3338)
+Completed 200 OK in 78ms (Views: 68.2ms | ActiveRecord: 0.0ms | Allocations: 4685)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 21:59:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.9ms | Allocations: 947)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.3ms | Allocations: 1738)
+  Rendered layout layouts/application.html.erb (Duration: 172.5ms | Allocations: 15705)
+Completed 200 OK in 229ms (Views: 190.2ms | ActiveRecord: 38.6ms | Allocations: 24173)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 21:59:29 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.3ms | Allocations: 1023)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.4ms | Allocations: 1265)
+  Rendered layout layouts/application.html.erb (Duration: 160.9ms | Allocations: 15206)
+Completed 200 OK in 219ms (Views: 181.1ms | ActiveRecord: 38.3ms | Allocations: 23741)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 21:59:46 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.1ms | Allocations: 899)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.0ms | Allocations: 1140)
+  Rendered layout layouts/application.html.erb (Duration: 172.3ms | Allocations: 15204)
+Completed 200 OK in 250ms (Views: 208.4ms | ActiveRecord: 38.2ms | Allocations: 23695)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 21:59:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.5ms | Allocations: 2041)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.6ms | Allocations: 2295)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 2396)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 39.1ms | Allocations: 10913)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%- if devise_mapping.omniauthable? %>
+  <%- resource_class.omniauth_providers.each do |provider| %>
+    <meta name="google-signin-client_id" content="<%= Rails.application.credentials.google[:google_client_id] %>">
+    <%= form_for "Login",
+                 url: "http://localhost:3000/users/auth/google_oauth2",
+                 method: :post,
+                 data: {turbo: "false"} do |f| %>,
+      <%= f.submit "Login", type: "image", src: url_for("/assets/web_dark_rd_ctn@3x.png") %>
+    <% end %>
+  <% end %>
+<% end %>
+
+
+<%#- if devise_mapping.registerable? && controller_name != 'registrations' %>
+<!--  <%#= link_to "Sign up", new_registration_path(resource_name) %><br />-->
+<%# end %>
+
+<%#- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+<!--  <%#= link_to "Forgot your password?", new_password_path(resource_name) %><br />-->
+<%# end %>
+
+<%#- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+<!--  <%#= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />-->
+<%# end %>
+
+<%#- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+<!--  <%#= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %><br />-->
+<%# end %>
+
+<%#- if devise_mapping.omniauthable? %>
+  <%#- resource_class.omniauth_providers.each do |provider| %>
+<!--    <%#= button_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), data: { turbo: false } %><br />-->
+  <%# end %>
+<% end %>
+
+):
+1:    <%- if devise_mapping.omniauthable? %>
+2:      <%- resource_class.omniauth_providers.each do |provider| %>
+3:        <meta name="google-signin-client_id" content="<%= Rails.application.credentials.google[:google_client_id] %>">
+4:        <%= form_for "Login",
+5:                     url: "http://localhost:3000/users/auth/google_oauth2",
+6:                     method: :post,
+7:                     data: {turbo: "false"} do |f| %>,
+8:          <%= f.submit "Login", type: "image", src: url_for("/assets/web_dark_rd_ctn@3x.png") %>
+9:        <% end %>
+10:      <% end %>
+11:    <% end %>
+12:    
+13:    
+14:    <%#- if devise_mapping.registerable? && controller_name != 'registrations' %>
+15:    <!--  <%#= link_to "Sign up", new_registration_path(resource_name) %><br />-->
+16:    <%# end %>
+17:    
+18:    <%#- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+19:    <!--  <%#= link_to "Forgot your password?", new_password_path(resource_name) %><br />-->
+20:    <%# end %>
+21:    
+22:    <%#- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+23:    <!--  <%#= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />-->
+24:    <%# end %>
+25:    
+26:    <%#- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+27:    <!--  <%#= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %><br />-->
+28:    <%# end %>
+29:    
+30:    <%#- if devise_mapping.omniauthable? %>
+31:      <%#- resource_class.omniauth_providers.each do |provider| %>
+32:    <!--    <%#= button_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), data: { turbo: false } %><br />-->
+33:      <%# end %>
+34:    <% end %>
+  
+app/views/devise/shared/_links.html.erb:36: syntax error, unexpected `end'
+app/views/devise/sessions/new.html.erb:3
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:00:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.6ms | Allocations: 685)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 926)
+  Rendered layout layouts/application.html.erb (Duration: 220.1ms | Allocations: 14990)
+Completed 200 OK in 304ms (Views: 267.2ms | ActiveRecord: 33.2ms | Allocations: 23535)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:00:10 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=ce660dea345185b6b6357095d465e50760288e13d43a8943&code=4%2F0AeanS0Zi1NqF74zMnp4tdjofXcaRzEuUzyCxNynrgUW5UX2auX7OVjN_BXc8LCoi0IlBdQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:00:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"ce660dea345185b6b6357095d465e50760288e13d43a8943", "code"=>"4/0AeanS0Zi1NqF74zMnp4tdjofXcaRzEuUzyCxNynrgUW5UX2auX7OVjN_BXc8LCoi0IlBdQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 1.3ms | Allocations: 1286)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:00:12 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 3.7ms | Allocations: 198)
+  Rendered users/index.html.erb within layouts/application (Duration: 21.0ms | Allocations: 2315)
+  Rendered layout layouts/application.html.erb (Duration: 79.7ms | Allocations: 3489)
+Completed 200 OK in 103ms (Views: 84.1ms | ActiveRecord: 1.0ms | Allocations: 4243)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:00:25 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.1ms | Allocations: 1658)
+  Rendered users/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 2362)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 2454)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms | Allocations: 3605)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<ActionView::Base:0x000000000443b8>):
+    1: <%- if devise_mapping.omniauthable? %>
+    2:   <%- resource_class.omniauth_providers.each do |provider| %>
+    3:     <meta name="google-signin-client_id" content="<%= Rails.application.credentials.google[:google_client_id] %>">
+    4:     <%= form_for "Login",
+  
+app/views/devise/shared/_links.html.erb:1
+app/views/users/index.html.erb:3
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:00:51 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.6ms | Allocations: 1609)
+  Rendered users/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 2308)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 2400)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms | Allocations: 3547)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<ActionView::Base:0x00000000049bb0>):
+    1: <%- if devise_mapping.omniauthable? %>
+    2:   <%- resource_class.omniauth_providers.each do |provider| %>
+    3:     <meta name="google-signin-client_id" content="<%= Rails.application.credentials.google[:google_client_id] %>">
+    4:     <%= form_for "Login",
+  
+app/views/devise/shared/_links.html.erb:1
+app/views/users/index.html.erb:3
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:01:10 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/_user.html.erb (Duration: 4.9ms | Allocations: 203)
+  Rendered users/index.html.erb within layouts/application (Duration: 55.6ms | Allocations: 9187)
+  Rendered layout layouts/application.html.erb (Duration: 438.8ms | Allocations: 23252)
+Completed 200 OK in 509ms (Views: 417.0ms | ActiveRecord: 41.9ms | Allocations: 24406)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2024-11-21 22:01:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Completed 303 See Other in 14ms (ActiveRecord: 0.5ms | Allocations: 2101)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:01:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.9ms | Allocations: 681)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.7ms | Allocations: 920)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 2092)
+Completed 200 OK in 63ms (Views: 51.0ms | ActiveRecord: 0.0ms | Allocations: 3438)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:01:34 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=0aa16acf2df4319ad4607bd6ea01b8b20c90c990f12f0287&code=4%2F0AeanS0Y5vWs1iFzTTqVPIKpYAqTXmNIv1CX7Kf1xsVAVPMGyMj2k3CmmMMowBMZhagiqWA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:01:35 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"0aa16acf2df4319ad4607bd6ea01b8b20c90c990f12f0287", "code"=>"4/0AeanS0Y5vWs1iFzTTqVPIKpYAqTXmNIv1CX7Kf1xsVAVPMGyMj2k3CmmMMowBMZhagiqWA", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.6ms | Allocations: 996)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:01:36 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1487)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 2609)
+Completed 200 OK in 54ms (Views: 34.4ms | ActiveRecord: 1.0ms | Allocations: 2865)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2024-11-21 22:01:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Completed 303 See Other in 13ms (ActiveRecord: 0.5ms | Allocations: 1700)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:01:50 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 220)
+  Rendered layout layouts/application.html.erb (Duration: 207.6ms | Allocations: 1323)
+Completed 200 OK in 237ms (Views: 226.0ms | ActiveRecord: 0.0ms | Allocations: 1950)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:01:59 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.3ms | Allocations: 686)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.4ms | Allocations: 928)
+  Rendered layout layouts/application.html.erb (Duration: 180.0ms | Allocations: 14977)
+Completed 200 OK in 262ms (Views: 225.8ms | ActiveRecord: 33.8ms | Allocations: 23484)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:02:02 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=760f3d53cee34cea7ad78877152d7a05df6663b3f56f6e9e&code=4%2F0AeanS0arJfXpIpoT59Xj1Whal8XyjFx_MvJggyfR17w1-Fji5W_CuZ2UKLi5HHktDBR4dg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:02:02 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"760f3d53cee34cea7ad78877152d7a05df6663b3f56f6e9e", "code"=>"4/0AeanS0arJfXpIpoT59Xj1Whal8XyjFx_MvJggyfR17w1-Fji5W_CuZ2UKLi5HHktDBR4dg", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 1.5ms | Allocations: 1286)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:02:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/_user.html.erb (Duration: 3.9ms | Allocations: 198)
+  Rendered users/index.html.erb within layouts/application (Duration: 22.3ms | Allocations: 2316)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 3505)
+Completed 200 OK in 71ms (Views: 52.8ms | ActiveRecord: 1.0ms | Allocations: 4259)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2024-11-21 22:02:07 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Completed 303 See Other in 13ms (ActiveRecord: 0.8ms | Allocations: 1910)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:02:08 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 154)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 221)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 1338)
+Completed 200 OK in 36ms (Views: 26.2ms | ActiveRecord: 0.0ms | Allocations: 1972)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:02:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=ee160596debf52e5984ec02157399209e72c2846649b45da&code=4%2F0AeanS0bF3EFqRU3n5-AlUIj7wUiaxD9p8IqoejSRrXTkxPNsWsvPGxsCak3jNjxu72ODBQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:02:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"ee160596debf52e5984ec02157399209e72c2846649b45da", "code"=>"4/0AeanS0bF3EFqRU3n5-AlUIj7wUiaxD9p8IqoejSRrXTkxPNsWsvPGxsCak3jNjxu72ODBQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.5ms | Allocations: 792)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:02:12 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1479)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 2586)
+Completed 200 OK in 69ms (Views: 28.9ms | ActiveRecord: 0.8ms | Allocations: 2841)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:02:20 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/_user.html.erb (Duration: 3.9ms | Allocations: 203)
+  Rendered users/index.html.erb within layouts/application (Duration: 47.0ms | Allocations: 9181)
+  Rendered layout layouts/application.html.erb (Duration: 201.5ms | Allocations: 23310)
+Completed 200 OK in 241ms (Views: 172.4ms | ActiveRecord: 37.0ms | Allocations: 24469)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2024-11-21 22:02:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Completed 303 See Other in 18ms (ActiveRecord: 0.5ms | Allocations: 2105)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:02:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.1ms | Allocations: 683)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.4ms | Allocations: 923)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 2109)
+Completed 200 OK in 81ms (Views: 69.6ms | ActiveRecord: 0.0ms | Allocations: 3471)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:02:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=9f5f15b69b79e67c5bf5cf79cd2fea0535d70494bc7dbf6e&code=4%2F0AeanS0aTElEANnukoKSxKRcwD61AmTbk1xLh0RfsavhkpZv4WLqw7WFToMnRBS06_QQ38w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:02:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"9f5f15b69b79e67c5bf5cf79cd2fea0535d70494bc7dbf6e", "code"=>"4/0AeanS0aTElEANnukoKSxKRcwD61AmTbk1xLh0RfsavhkpZv4WLqw7WFToMnRBS06_QQ38w", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.6ms | Allocations: 997)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:02:25 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1484)
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 2592)
+Completed 200 OK in 66ms (Views: 43.9ms | ActiveRecord: 2.3ms | Allocations: 2848)
+
+
+Started GET "/users/edit" for 172.17.0.1 at 2024-11-21 22:02:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.3ms | Allocations: 213)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 114.4ms | Allocations: 1994)
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:02:46 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  Rendered layout layouts/application.html.erb (Duration: 356.2ms | Allocations: 17024)
+Completed 200 OK in 454ms (Views: 387.6ms | ActiveRecord: 60.0ms | Allocations: 26810)
+
+
+Processing by UsersController#index as HTML
+Started GET "/users/edit" for 172.17.0.1 at 2024-11-21 22:02:46 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 4.8ms | Allocations: 204)
+  Rendered users/index.html.erb within layouts/application (Duration: 140.1ms | Allocations: 9246)
+  Rendered layout layouts/application.html.erb (Duration: 376.9ms | Allocations: 23728)
+Completed 200 OK in 409ms (Views: 338.2ms | ActiveRecord: 49.9ms | Allocations: 25834)
+
+
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.6ms | Allocations: 213)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 20.6ms | Allocations: 1983)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 3172)
+Completed 200 OK in 81ms (Views: 65.7ms | ActiveRecord: 0.6ms | Allocations: 5618)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2024-11-21 22:02:47 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Completed 303 See Other in 13ms (ActiveRecord: 0.5ms | Allocations: 2111)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:02:48 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.1ms | Allocations: 649)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.3ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 1989)
+Completed 200 OK in 64ms (Views: 51.8ms | ActiveRecord: 0.0ms | Allocations: 3058)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:02:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 865)
+  Rendered layout layouts/application.html.erb (Duration: 43.8ms | Allocations: 1973)
+Completed 200 OK in 54ms (Views: 44.4ms | ActiveRecord: 0.9ms | Allocations: 2229)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:03:16 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1749)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 1841)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms | Allocations: 2987)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<ActionView::Base:0x0000000006b008>):
+     7:   <%= link_to "Edit Account", edit_user_registration_path %>
+     8:   <%= button_to "Logout", destroy_user_session_path, data: {turbo: "false"}, method: :delete %>
+     9: <% else %>
+    10:   <%- if devise_mapping.omniauthable? %>
+    11:     <%- resource_class.omniauth_providers.each do |provider| %>
+    12:       <meta name="google-signin-client_id" content="<%= Rails.application.credentials.google[:google_client_id] %>">
+    13:       <%= form_for "Login",
+  
+app/views/users/index.html.erb:10
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:04:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 3.2ms | Allocations: 206)
+  Rendered users/index.html.erb within layouts/application (Duration: 44.4ms | Allocations: 8307)
+  Rendered layout layouts/application.html.erb (Duration: 225.4ms | Allocations: 22388)
+Completed 200 OK in 254ms (Views: 201.9ms | ActiveRecord: 34.5ms | Allocations: 23544)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:04:16 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.6ms | Allocations: 686)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 924)
+  Rendered layout layouts/application.html.erb (Duration: 124.5ms | Allocations: 2095)
+Completed 200 OK in 369ms (Views: 312.0ms | ActiveRecord: 0.0ms | Allocations: 3604)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:04:18 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=93ddbe010b7624d486c1c09deac293513b461c0b02e7a77e&code=4%2F0AeanS0ZKqMDkBFNebzJiyfwEBJ43G_6SC1MkcRR2bJaiIUIJV7pSeaFUwZ6nWNl45gW61w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:04:19 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"93ddbe010b7624d486c1c09deac293513b461c0b02e7a77e", "code"=>"4/0AeanS0ZKqMDkBFNebzJiyfwEBJ43G_6SC1MkcRR2bJaiIUIJV7pSeaFUwZ6nWNl45gW61w", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.6ms | Allocations: 1183)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:04:19 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 1554)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 2661)
+Completed 200 OK in 52ms (Views: 40.2ms | ActiveRecord: 1.1ms | Allocations: 2917)
+
+
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:04:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CalendarsController#callback as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 605)
+
+
+  
+NameError (uninitialized constant Signet::OAuth2):
+  
+app/controllers/calendars_controller.rb:12:in `callback'
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:07:44 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 3.5ms | Allocations: 203)
+  Rendered users/index.html.erb within layouts/application (Duration: 44.0ms | Allocations: 9191)
+  Rendered layout layouts/application.html.erb (Duration: 205.5ms | Allocations: 23299)
+Completed 200 OK in 235ms (Views: 180.3ms | ActiveRecord: 33.5ms | Allocations: 24455)
+
+
+Started GET "/users/3" for 172.17.0.1 at 2024-11-21 22:07:46 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 641)
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 1749)
+Completed 200 OK in 72ms (Views: 50.2ms | ActiveRecord: 0.8ms | Allocations: 3093)
+
+
+Started GET "/users/3/edit" for 172.17.0.1 at 2024-11-21 22:07:47 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.5ms | Allocations: 1374)
+  Rendered users/edit.html.erb within layouts/application (Duration: 14.4ms | Allocations: 1973)
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 3081)
+Completed 200 OK in 54ms (Views: 37.4ms | ActiveRecord: 0.4ms | Allocations: 3737)
+
+
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:07:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CalendarsController#callback as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 603)
+
+
+  
+NameError (uninitialized constant Signet::OAuth2):
+  
+app/controllers/calendars_controller.rb:12:in `callback'
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:07:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1469)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 2591)
+Completed 200 OK in 40ms (Views: 28.5ms | ActiveRecord: 0.8ms | Allocations: 2846)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:07:54 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1442)
+  Rendered layout layouts/application.html.erb (Duration: 44.3ms | Allocations: 2549)
+Completed 200 OK in 64ms (Views: 44.5ms | ActiveRecord: 1.0ms | Allocations: 2803)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2024-11-21 22:07:55 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Completed 303 See Other in 41ms (ActiveRecord: 0.5ms | Allocations: 2107)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:07:56 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 7.6ms | Allocations: 683)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.0ms | Allocations: 921)
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 2092)
+Completed 200 OK in 80ms (Views: 64.7ms | ActiveRecord: 0.0ms | Allocations: 3430)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:07:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=5ac45aaa074dfe99184fa146740fe8331610345de03818ab&code=4%2F0AeanS0b4rKi7QQbnp2LVrgZWMQQCX4K5qVN6DZTOykvLGOC-mNiAmzf_Oii_wY19mDxPdw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:07:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"5ac45aaa074dfe99184fa146740fe8331610345de03818ab", "code"=>"4/0AeanS0b4rKi7QQbnp2LVrgZWMQQCX4K5qVN6DZTOykvLGOC-mNiAmzf_Oii_wY19mDxPdw", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.7ms | Allocations: 996)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:07:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1463)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 2570)
+Completed 200 OK in 39ms (Views: 27.9ms | ActiveRecord: 0.8ms | Allocations: 2825)
+
+
+Started GET "/users/3" for 172.17.0.1 at 2024-11-21 22:08:00 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 472)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 1575)
+Completed 200 OK in 41ms (Views: 28.8ms | ActiveRecord: 0.4ms | Allocations: 2170)
+
+
+Started DELETE "/users/3" for 172.17.0.1 at 2024-11-21 22:08:01 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (1.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (15.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 303 See Other in 35ms (ActiveRecord: 17.3ms | Allocations: 2067)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:08:01 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1261)
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 2369)
+Completed 200 OK in 49ms (Views: 33.5ms | ActiveRecord: 1.3ms | Allocations: 2669)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:08:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 217)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 1320)
+Completed 200 OK in 33ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 1963)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:08:04 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=d34f645b89c0287fc2e4e4e9c9ceb342784d61902aa8f90f&code=4%2F0AeanS0b4NaSqg7VODikcgWso--WiOlN6yKLyYtSrYh2rHlPSDtjqc4CSEyzKWfyWZoCpFw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:08:04 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"d34f645b89c0287fc2e4e4e9c9ceb342784d61902aa8f90f", "code"=>"4/0AeanS0b4NaSqg7VODikcgWso--WiOlN6yKLyYtSrYh2rHlPSDtjqc4CSEyzKWfyWZoCpFw", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.6ms | Allocations: 1992)
+
+
+  
+NoMethodError (undefined method `google_toker=' for #<User id: nil, name: nil, last_name: nil, partner: nil, created_at: nil, updated_at: nil, full_name: "uncreative name", uid: "115146984808721784575", avatar_url: "https://lh3.googleusercontent.com/a/ACg8ocLHo6cw98...", provider: "google_oauth2", email: "noah.hoepfinger@gmail.com", google_access_token: nil, google_refresh_token: nil, google_token_expires_at: nil>):
+  
+app/models/user.rb:13:in `block in from_omniauth'
+app/models/user.rb:8:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:3:in `google_oauth2'
+Started GET "/users/auth/google_oauth2/callback?state=d34f645b89c0287fc2e4e4e9c9ceb342784d61902aa8f90f&code=4%2F0AeanS0b4NaSqg7VODikcgWso--WiOlN6yKLyYtSrYh2rHlPSDtjqc4CSEyzKWfyWZoCpFw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:08:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"d34f645b89c0287fc2e4e4e9c9ceb342784d61902aa8f90f", "code"=>"4/0AeanS0b4NaSqg7VODikcgWso--WiOlN6yKLyYtSrYh2rHlPSDtjqc4CSEyzKWfyWZoCpFw", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email", "authuser"=>"0", "prompt"=>"none"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms | Allocations: 388)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:08:15 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.3ms | Allocations: 686)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.7ms | Allocations: 926)
+  Rendered layout layouts/application.html.erb (Duration: 183.4ms | Allocations: 14990)
+Completed 200 OK in 239ms (Views: 203.9ms | ActiveRecord: 34.5ms | Allocations: 23534)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:08:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=7055f48d1e556a3399ed91cfc70dc98b8742eb2ba978a6d3&code=4%2F0AeanS0apjqdKrsKC3HDM9EDjinLzy3pEfHxwzMw7GtvizTJKcanIaOsm8oI-Em7tAFgVGQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:08:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"7055f48d1e556a3399ed91cfc70dc98b8742eb2ba978a6d3", "code"=>"4/0AeanS0apjqdKrsKC3HDM9EDjinLzy3pEfHxwzMw7GtvizTJKcanIaOsm8oI-Em7tAFgVGQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 1.3ms | Allocations: 1742)
+
+
+  
+NoMethodError (undefined method `google_token=' for #<User id: nil, name: nil, last_name: nil, partner: nil, created_at: nil, updated_at: nil, full_name: "uncreative name", uid: "115146984808721784575", avatar_url: "https://lh3.googleusercontent.com/a/ACg8ocLHo6cw98...", provider: "google_oauth2", email: "noah.hoepfinger@gmail.com", google_access_token: nil, google_refresh_token: nil, google_token_expires_at: nil>):
+  
+app/models/user.rb:13:in `block in from_omniauth'
+app/models/user.rb:8:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:3:in `google_oauth2'
+Started GET "/users/auth/google_oauth2/callback?state=7055f48d1e556a3399ed91cfc70dc98b8742eb2ba978a6d3&code=4%2F0AeanS0apjqdKrsKC3HDM9EDjinLzy3pEfHxwzMw7GtvizTJKcanIaOsm8oI-Em7tAFgVGQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:09:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"7055f48d1e556a3399ed91cfc70dc98b8742eb2ba978a6d3", "code"=>"4/0AeanS0apjqdKrsKC3HDM9EDjinLzy3pEfHxwzMw7GtvizTJKcanIaOsm8oI-Em7tAFgVGQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms | Allocations: 372)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:09:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.2ms | Allocations: 686)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 925)
+  Rendered layout layouts/application.html.erb (Duration: 150.1ms | Allocations: 14987)
+Completed 200 OK in 202ms (Views: 168.3ms | ActiveRecord: 34.0ms | Allocations: 23510)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:09:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=5487ba9d1f7b524b56b1d521d8dc3e16c6655ed60f9e9fae&code=4%2F0AeanS0YYCvorJxLGSr18U07FppxEaXSFnPQm4lrZhnpX4VnS4SMZ0agR8uUA7H1XQ5i_DQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:09:26 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"5487ba9d1f7b524b56b1d521d8dc3e16c6655ed60f9e9fae", "code"=>"4/0AeanS0YYCvorJxLGSr18U07FppxEaXSFnPQm4lrZhnpX4VnS4SMZ0agR8uUA7H1XQ5i_DQ", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mUser Exists? (6.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "noah.hoepfinger@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "partner", "created_at", "updated_at", "full_name", "uid", "avatar_url", "provider", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "google_access_token", "google_refresh_token", "google_token_expires_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", nil], ["last_name", nil], ["partner", nil], ["created_at", "2024-11-21 22:09:27.533203"], ["updated_at", "2024-11-21 22:09:27.533203"], ["full_name", "uncreative name"], ["uid", "115146984808721784575"], ["avatar_url", "https://lh3.googleusercontent.com/a/ACg8ocLHo6cw98ZG4HlKcqfAPVrIaJpAuWbseGHh2Rx4yskx3WVDNyKi"], ["provider", "google_oauth2"], ["email", "noah.hoepfinger@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["google_access_token", "[FILTERED]"], ["google_refresh_token", "[FILTERED]"], ["google_token_expires_at", "[FILTERED]"]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mTRANSACTION (24.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 241ms (ActiveRecord: 35.9ms | Allocations: 5456)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:09:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 3.5ms | Allocations: 192)
+  Rendered users/index.html.erb within layouts/application (Duration: 22.4ms | Allocations: 2334)
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 3523)
+Completed 200 OK in 66ms (Views: 46.6ms | ActiveRecord: 1.7ms | Allocations: 4279)
+
+
+Started GET "/users/4" for 172.17.0.1 at 2024-11-21 22:09:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 630)
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 1733)
+Completed 200 OK in 60ms (Views: 35.9ms | ActiveRecord: 0.4ms | Allocations: 3074)
+
+
+Started GET "/users/4/edit" for 172.17.0.1 at 2024-11-21 22:09:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.4ms | Allocations: 1360)
+  Rendered users/edit.html.erb within layouts/application (Duration: 20.0ms | Allocations: 1959)
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 3062)
+Completed 200 OK in 73ms (Views: 45.7ms | ActiveRecord: 0.3ms | Allocations: 3718)
+
+
+Started PATCH "/users/4" for 172.17.0.1 at 2024-11-21 22:09:44 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Noah", "last_name"=>"Hoepfinger", "partner"=>"Izzy"}, "commit"=>"Update User", "id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `block in update'
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "last_name" = ?, "partner" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "Noah"], ["last_name", "Hoepfinger"], ["partner", "Izzy"], ["updated_at", "2024-11-21 22:09:44.726907"], ["id", 4]]
+  ↳ app/controllers/users_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `block in update'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 17ms (ActiveRecord: 1.9ms | Allocations: 2610)
+
+
+Started GET "/users/4" for 172.17.0.1 at 2024-11-21 22:09:44 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 533)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 1636)
+Completed 200 OK in 36ms (Views: 24.0ms | ActiveRecord: 0.8ms | Allocations: 2281)
+
+
+Started GET "/users/4/edit" for 172.17.0.1 at 2024-11-21 22:09:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.0ms | Allocations: 930)
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1034)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 2137)
+Completed 200 OK in 34ms (Views: 24.0ms | ActiveRecord: 0.3ms | Allocations: 2736)
+
+
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:14:47 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+NameError (undefined local variable or method `calendars_url' for CalendarsController:Class):
+  
+app/controllers/calendars_controller.rb:23:in `<class:CalendarsController>'
+app/controllers/calendars_controller.rb:1:in `<main>'
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:14:50 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 4.4ms | Allocations: 203)
+  Rendered users/index.html.erb within layouts/application (Duration: 53.5ms | Allocations: 9185)
+  Rendered layout layouts/application.html.erb (Duration: 188.7ms | Allocations: 23252)
+Completed 200 OK in 231ms (Views: 159.7ms | ActiveRecord: 41.6ms | Allocations: 24368)
+
+
+Started GET "/users/4" for 172.17.0.1 at 2024-11-21 22:14:51 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 641)
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 1744)
+Completed 200 OK in 56ms (Views: 36.3ms | ActiveRecord: 0.8ms | Allocations: 3090)
+
+
+Started GET "/users/4/edit" for 172.17.0.1 at 2024-11-21 22:14:52 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.1ms | Allocations: 1362)
+  Rendered users/edit.html.erb within layouts/application (Duration: 16.6ms | Allocations: 1961)
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 3064)
+Completed 200 OK in 67ms (Views: 41.1ms | ActiveRecord: 0.4ms | Allocations: 3723)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:14:55 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1460)
+  Rendered layout layouts/application.html.erb (Duration: 58.5ms | Allocations: 2567)
+Completed 200 OK in 70ms (Views: 58.7ms | ActiveRecord: 0.9ms | Allocations: 2822)
+
+
+Started GET "/users/4" for 172.17.0.1 at 2024-11-21 22:14:56 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 457)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 1560)
+Completed 200 OK in 49ms (Views: 23.4ms | ActiveRecord: 0.4ms | Allocations: 2159)
+
+
+Started GET "/users/4/edit" for 172.17.0.1 at 2024-11-21 22:14:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.0ms | Allocations: 933)
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1037)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 2140)
+Completed 200 OK in 34ms (Views: 23.9ms | ActiveRecord: 0.3ms | Allocations: 2739)
+
+
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:17:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+NameError (undefined local variable or method `calendars_url' for CalendarsController:Class):
+  
+app/controllers/calendars_controller.rb:23:in `<class:CalendarsController>'
+app/controllers/calendars_controller.rb:1:in `<main>'
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:17:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/workspace/wedding_planner/app/controllers/calendars_controller.rb:77: syntax error, unexpected end-of-input
+  end
+     ^
+):
+  
+app/controllers/calendars_controller.rb:77: syntax error, unexpected end-of-input
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:17:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'callback' could not be found for CalendarsController):
+  
+actionpack (7.1.5) lib/abstract_controller/base.rb:155:in `process'
+actionview (7.1.5) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.5) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.5) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.5) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.5) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.5) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.5) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.5) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.5) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.5) lib/action_dispatch/routing/route_set.rb:882:in `call'
+omniauth (2.1.2) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.2) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.5) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.5) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.5) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.5) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.5) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.5) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.5) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.5) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.5) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.5) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.5) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.5) lib/rails/engine.rb:536:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/users/4" for 172.17.0.1 at 2024-11-21 22:18:05 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 3.5ms | Allocations: 204)
+  Rendered users/show.html.erb within layouts/application (Duration: 15.8ms | Allocations: 1034)
+  Rendered layout layouts/application.html.erb (Duration: 206.5ms | Allocations: 15097)
+Completed 200 OK in 257ms (Views: 214.8ms | ActiveRecord: 35.8ms | Allocations: 23864)
+
+
+Started GET "/users/4/edit" for 172.17.0.1 at 2024-11-21 22:18:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.9ms | Allocations: 1350)
+  Rendered users/edit.html.erb within layouts/application (Duration: 14.1ms | Allocations: 1949)
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 3052)
+Completed 200 OK in 74ms (Views: 51.6ms | ActiveRecord: 0.4ms | Allocations: 3710)
+
+
+Started GET "/users/4/edit" for 172.17.0.1 at 2024-11-21 22:18:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1061)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 2179)
+Completed 200 OK in 56ms (Views: 35.9ms | ActiveRecord: 0.6ms | Allocations: 2780)
+
+
+Started PATCH "/users/4" for 172.17.0.1 at 2024-11-21 22:18:07 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Noah", "last_name"=>"Hoepfinger", "partner"=>"Izzy"}, "commit"=>"Update User", "id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 18ms (ActiveRecord: 0.5ms | Allocations: 1363)
+
+
+Started GET "/users/4" for 172.17.0.1 at 2024-11-21 22:18:07 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 527)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 1639)
+Completed 200 OK in 69ms (Views: 42.5ms | ActiveRecord: 0.6ms | Allocations: 2284)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:18:08 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 2084)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 3196)
+Completed 200 OK in 81ms (Views: 45.7ms | ActiveRecord: 0.9ms | Allocations: 3538)
+
+
+Started GET "/users/4/edit" for 172.17.0.1 at 2024-11-21 22:18:09 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.1ms | Allocations: 942)
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1046)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 2149)
+Completed 200 OK in 52ms (Views: 40.9ms | ActiveRecord: 0.4ms | Allocations: 2749)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:18:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1460)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 2567)
+Completed 200 OK in 42ms (Views: 29.7ms | ActiveRecord: 0.9ms | Allocations: 2822)
+
+
+Started GET "/google" for 172.17.0.1 at 2024-11-21 22:18:15 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/google"):
+  
+Started GET "/rails/info/routes?query=call" for 172.17.0.1 at 2024-11-21 22:18:19 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"call"}
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 15436)
+
+
+Started GET "/users/4" for 172.17.0.1 at 2024-11-21 22:18:28 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 472)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 1592)
+Completed 200 OK in 48ms (Views: 29.7ms | ActiveRecord: 0.6ms | Allocations: 2191)
+
+
+Started GET "/users/4/callback" for 172.17.0.1 at 2024-11-21 22:18:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/users/4/callback"):
+  
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:18:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'callback' could not be found for CalendarsController):
+  
+actionpack (7.1.5) lib/abstract_controller/base.rb:155:in `process'
+actionview (7.1.5) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.5) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.5) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.5) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.5) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.5) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.5) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.5) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.5) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.5) lib/action_dispatch/routing/route_set.rb:882:in `call'
+omniauth (2.1.2) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.2) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.5) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.5) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.5) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.5) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.5) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.5) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.5) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.5) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.5) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.5) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.5) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.5) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.5) lib/rails/engine.rb:536:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/rails/info/routes?query=cal" for 172.17.0.1 at 2024-11-21 22:18:54 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"cal"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 12900)
+
+
+Started GET "/rails/info/routes?query=calen" for 172.17.0.1 at 2024-11-21 22:18:55 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"calen"}
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 13041)
+
+
+Started GET "/rails/info/routes?query=calendars" for 172.17.0.1 at 2024-11-21 22:18:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"calendars"}
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 13198)
+
+
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:19:15 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+NameError (undefined local variable or method `page' for CalendarsController:Class):
+  
+app/controllers/calendars_controller.rb:4:in `<class:CalendarsController>'
+app/controllers/calendars_controller.rb:1:in `<main>'
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:19:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CalendarsController#callback as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 609)
+
+
+  
+NameError (uninitialized constant Signet::OAuth2):
+  
+app/controllers/calendars_controller.rb:12:in `callback'
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:20:32 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CalendarsController#callback as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:12:in `callback'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 48.1ms | Allocations: 8417)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/calendars_controller.rb:18:in `callback'
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:20:56 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CalendarsController#callback as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:12:in `callback'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms | Allocations: 1280)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/calendars_controller.rb:18:in `callback'
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:22:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/4/edit" for 172.17.0.1 at 2024-11-21 22:22:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 5.4ms | Allocations: 205)
+  Rendered users/index.html.erb within layouts/application (Duration: 26.3ms | Allocations: 2284)
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.9ms | Allocations: 1509)
+  Rendered users/edit.html.erb within layouts/application (Duration: 18.6ms | Allocations: 2582)
+  Rendered layout layouts/application.html.erb (Duration: 231.2ms | Allocations: 23861)
+Completed 200 OK in 258ms (Views: 240.4ms | ActiveRecord: 1.0ms | Allocations: 25048)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 205.9ms | Allocations: 20010)
+Completed 200 OK in 247ms (Views: 208.1ms | ActiveRecord: 10.4ms | Allocations: 22496)
+
+
+Started GET "/users/4/callback" for 172.17.0.1 at 2024-11-21 22:22:08 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/users/4/callback"):
+  
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:22:12 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CalendarsController#callback as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:12:in `callback'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms | Allocations: 1338)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/calendars_controller.rb:18:in `callback'
+Started PATCH "/users/4" for 172.17.0.1 at 2024-11-21 22:22:37 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Noah", "last_name"=>"Hoepfinger", "partner"=>"Izzy"}, "commit"=>"Update User", "id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 22ms (ActiveRecord: 0.7ms | Allocations: 1372)
+
+
+Started GET "/users/4" for 172.17.0.1 at 2024-11-21 22:22:37 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 717)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 1835)
+Completed 200 OK in 50ms (Views: 33.1ms | ActiveRecord: 0.4ms | Allocations: 2566)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:22:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1521)
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 2628)
+Completed 200 OK in 44ms (Views: 34.8ms | ActiveRecord: 0.7ms | Allocations: 2883)
+
+
+Started GET "/users/edit" for 172.17.0.1 at 2024-11-21 22:22:39 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.3ms | Allocations: 212)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 40.8ms | Allocations: 1975)
+  Rendered layout layouts/application.html.erb (Duration: 63.3ms | Allocations: 3149)
+Completed 200 OK in 221ms (Views: 132.0ms | ActiveRecord: 2.6ms | Allocations: 5583)
+
+
+Started DELETE "/users/sign_out" for 172.17.0.1 at 2024-11-21 22:22:40 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Completed 303 See Other in 13ms (ActiveRecord: 0.5ms | Allocations: 1988)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:22:40 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.5ms | Allocations: 649)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.6ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 1989)
+Completed 200 OK in 73ms (Views: 61.2ms | ActiveRecord: 0.0ms | Allocations: 3047)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:22:41 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=def1bd0c05693b8149d6c8a7a30ca4549e8ae4b04cb1624a&code=4%2F0AeanS0Y3sGvEVOgOpEoz_svl7GyJ4kbX2boe8gCeUjCywT8tmaO5g_XSPjDhtbw4I5zs1Q&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:22:42 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"def1bd0c05693b8149d6c8a7a30ca4549e8ae4b04cb1624a", "code"=>"4/0AeanS0Y3sGvEVOgOpEoz_svl7GyJ4kbX2boe8gCeUjCywT8tmaO5g_XSPjDhtbw4I5zs1Q", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.7ms | Allocations: 1000)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:22:43 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1460)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 2567)
+Completed 200 OK in 45ms (Views: 31.5ms | ActiveRecord: 0.9ms | Allocations: 2823)
+
+
+Started GET "/users/edit" for 172.17.0.1 at 2024-11-21 22:22:44 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1138)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 2245)
+Completed 200 OK in 58ms (Views: 39.5ms | ActiveRecord: 0.5ms | Allocations: 3844)
+
+
+Started DELETE "/users" for 172.17.0.1 at 2024-11-21 22:22:47 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::RegistrationsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (3.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (8.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 37ms (ActiveRecord: 12.7ms | Allocations: 4397)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:22:47 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 684)
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 1795)
+Completed 200 OK in 47ms (Views: 32.9ms | ActiveRecord: 1.4ms | Allocations: 2053)
+
+
+Started GET "/users/new" for 172.17.0.1 at 2024-11-21 22:22:48 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.1ms | Allocations: 935)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1149)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 2256)
+Completed 200 OK in 54ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 2590)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:22:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 658)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 1766)
+Completed 200 OK in 36ms (Views: 26.8ms | ActiveRecord: 0.2ms | Allocations: 2021)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:22:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 673)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 1781)
+Completed 200 OK in 44ms (Views: 32.0ms | ActiveRecord: 0.2ms | Allocations: 2037)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:22:50 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 150)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 217)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 1320)
+Completed 200 OK in 49ms (Views: 38.0ms | ActiveRecord: 0.0ms | Allocations: 1964)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:22:52 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=f26c9f6c664a4c4936400f907a4fd092d10c62c9a64db774&code=4%2F0AeanS0Y73gBACwBQpVaW7jm2K1zdUInSa4nBAxkGqoW2sKUxnY9KTGUuhMTJn34dDdeFFA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:22:52 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"f26c9f6c664a4c4936400f907a4fd092d10c62c9a64db774", "code"=>"4/0AeanS0Y73gBACwBQpVaW7jm2K1zdUInSa4nBAxkGqoW2sKUxnY9KTGUuhMTJn34dDdeFFA", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mUser Exists? (3.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "noah.hoepfinger@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "partner", "created_at", "updated_at", "full_name", "uid", "avatar_url", "provider", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "google_access_token", "google_refresh_token", "google_token_expires_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", nil], ["last_name", nil], ["partner", nil], ["created_at", "2024-11-21 22:22:53.982522"], ["updated_at", "2024-11-21 22:22:53.982522"], ["full_name", "uncreative name"], ["uid", "115146984808721784575"], ["avatar_url", "https://lh3.googleusercontent.com/a/ACg8ocLHo6cw98ZG4HlKcqfAPVrIaJpAuWbseGHh2Rx4yskx3WVDNyKi"], ["provider", "google_oauth2"], ["email", "noah.hoepfinger@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["google_access_token", "[FILTERED]"], ["google_refresh_token", "[FILTERED]"], ["google_token_expires_at", "[FILTERED]"]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 197ms (ActiveRecord: 5.3ms | Allocations: 3410)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:22:54 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered users/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 1455)
+  Rendered layout layouts/application.html.erb (Duration: 48.1ms | Allocations: 2577)
+Completed 200 OK in 63ms (Views: 46.9ms | ActiveRecord: 2.6ms | Allocations: 2833)
+
+
+Started GET "/users/5" for 172.17.0.1 at 2024-11-21 22:22:55 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 460)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 1563)
+Completed 200 OK in 51ms (Views: 33.5ms | ActiveRecord: 0.4ms | Allocations: 2159)
+
+
+Started GET "/users/5/edit" for 172.17.0.1 at 2024-11-21 22:22:56 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 0.9ms | Allocations: 939)
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1043)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 2146)
+Completed 200 OK in 38ms (Views: 24.4ms | ActiveRecord: 0.3ms | Allocations: 2742)
+
+
+Started PATCH "/users/5" for 172.17.0.1 at 2024-11-21 22:23:00 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Noah", "last_name"=>"Hoepfinger", "partner"=>"Izzy"}, "commit"=>"Update User", "id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `block in update'
+  [1m[36mUser Update (1.3ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "last_name" = ?, "partner" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "Noah"], ["last_name", "Hoepfinger"], ["partner", "Izzy"], ["updated_at", "2024-11-21 22:23:01.032370"], ["id", 5]]
+  ↳ app/controllers/users_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `block in update'
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 16ms (ActiveRecord: 2.0ms | Allocations: 2377)
+
+
+Started GET "/users/5" for 172.17.0.1 at 2024-11-21 22:23:01 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 1590)
+Completed 200 OK in 80ms (Views: 49.8ms | ActiveRecord: 1.4ms | Allocations: 2192)
+
+
+Started GET "/callback" for 172.17.0.1 at 2024-11-21 22:23:28 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CalendarsController#callback as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:12:in `callback'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms | Allocations: 1280)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/calendars_controller.rb:18:in `callback'
+Started DELETE "/users/5" for 172.17.0.1 at 2024-11-21 22:23:50 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (1.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 303 See Other in 32ms (ActiveRecord: 3.6ms | Allocations: 1886)
+
+
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:23:50 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1218)
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 2341)
+Completed 200 OK in 43ms (Views: 32.1ms | ActiveRecord: 0.9ms | Allocations: 2599)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2024-11-21 22:23:52 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 217)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 1320)
+Completed 200 OK in 47ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 1942)
+
+
+Started POST "/users/auth/google_oauth2" for 172.17.0.1 at 2024-11-21 22:23:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/users/auth/google_oauth2/callback?state=c8d7da027e16b844056d75ed3c95d1c985fa344a4cbc114b&code=4%2F0AeanS0aEFNkK29LnIOJT_eII__CksnCMtas2hShfAQruQEtVgCQvD3A6IzAIujo-ncdeXw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none" for 172.17.0.1 at 2024-11-21 22:23:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"c8d7da027e16b844056d75ed3c95d1c985fa344a4cbc114b", "code"=>"4/0AeanS0aEFNkK29LnIOJT_eII__CksnCMtas2hShfAQruQEtVgCQvD3A6IzAIujo-ncdeXw", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "115146984808721784575"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mUser Exists? (2.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "noah.hoepfinger@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "partner", "created_at", "updated_at", "full_name", "uid", "avatar_url", "provider", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "google_access_token", "google_refresh_token", "google_token_expires_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", nil], ["last_name", nil], ["partner", nil], ["created_at", "2024-11-21 22:23:54.506536"], ["updated_at", "2024-11-21 22:23:54.506536"], ["full_name", "uncreative name"], ["uid", "115146984808721784575"], ["avatar_url", "https://lh3.googleusercontent.com/a/ACg8ocLHo6cw98ZG4HlKcqfAPVrIaJpAuWbseGHh2Rx4yskx3WVDNyKi"], ["provider", "google_oauth2"], ["email", "noah.hoepfinger@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["google_access_token", "[FILTERED]"], ["google_refresh_token", "[FILTERED]"], ["google_token_expires_at", "[FILTERED]"]]
+  ↳ app/models/user.rb:8:in `from_omniauth'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:8:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 208ms (ActiveRecord: 4.6ms | Allocations: 3276)
+
+
+Started GET "/" for 172.17.0.1 at 2024-11-21 22:23:54 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered users/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 1461)
+  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 2568)
+Completed 200 OK in 81ms (Views: 63.5ms | ActiveRecord: 2.0ms | Allocations: 2822)
+
+
+Started GET "/users/6" for 172.17.0.1 at 2024-11-21 22:23:55 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 472)
+  Rendered layout layouts/application.html.erb (Duration: 54.0ms | Allocations: 1575)
+Completed 200 OK in 79ms (Views: 55.7ms | ActiveRecord: 0.4ms | Allocations: 2170)
+
+
+Started GET "/users/6/edit" for 172.17.0.1 at 2024-11-21 22:23:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 0.9ms | Allocations: 936)
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1046)
+Started GET "/users" for 172.17.0.1 at 2024-11-21 22:23:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 3117)
+Completed 200 OK in 52ms (Views: 31.0ms | ActiveRecord: 0.3ms | Allocations: 3860)
+
+
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1456)
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 2563)
+Completed 200 OK in 50ms (Views: 38.9ms | ActiveRecord: 0.4ms | Allocations: 2817)
+
+
+Started PATCH "/users/6" for 172.17.0.1 at 2024-11-21 22:24:02 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Noah", "last_name"=>"Hoepfinger", "partner"=>"Izzy"}, "commit"=>"Update User", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `block in update'
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "last_name" = ?, "partner" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "Noah"], ["last_name", "Hoepfinger"], ["partner", "Izzy"], ["updated_at", "2024-11-21 22:24:02.791707"], ["id", 6]]
+  ↳ app/controllers/users_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `block in update'
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 17ms (ActiveRecord: 2.1ms | Allocations: 2344)
+
+
+Started GET "/users/6" for 172.17.0.1 at 2024-11-21 22:24:02 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 480)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 1583)
+Completed 200 OK in 49ms (Views: 32.5ms | ActiveRecord: 0.8ms | Allocations: 2184)
+
+
+Started GET "/users/6/edit" for 172.17.0.1 at 2024-11-21 22:24:32 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.2ms | Allocations: 933)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1037)
+  Rendered layout layouts/application.html.erb (Duration: 53.3ms | Allocations: 2140)
+Completed 200 OK in 73ms (Views: 54.7ms | ActiveRecord: 0.3ms | Allocations: 2738)
+
+
+Started GET "/rails/info/routes?query=ca" for 172.17.0.1 at 2024-11-21 22:24:40 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"ca"}
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 13390)
+
+
+Started GET "/rails/info/routes?query=cal" for 172.17.0.1 at 2024-11-21 22:24:41 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"cal"}
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 13170)
+
+
+Started GET "/rails/info/routes?query=call" for 172.17.0.1 at 2024-11-21 22:24:41 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"call"}
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 13696)
+
+
+Started GET "/users/1" for 172.17.0.1 at 2024-11-21 22:25:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+Completed 404 Not Found in 13ms (ActiveRecord: 0.3ms | Allocations: 867)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:63:in `set_user'
+Started GET "/users/6/edit" for 172.17.0.1 at 2024-11-21 22:26:36 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.4ms | Allocations: 924)
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1028)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 2146)
+Completed 200 OK in 49ms (Views: 31.2ms | ActiveRecord: 0.3ms | Allocations: 2745)
+
+
+Started GET "/rails/info/routes?query=google" for 172.17.0.1 at 2024-11-21 22:26:50 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"google"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 13446)
+
+
+Started GET "/rails/info/routes?query=google" for 172.17.0.1 at 2024-11-21 22:26:51 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"google"}
+Completed 200 OK in 38ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 13444)
+
+

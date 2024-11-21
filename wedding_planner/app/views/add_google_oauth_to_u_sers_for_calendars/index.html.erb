@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Add google oauth to u sers for calendars</h1>
+
+<div id="add_google_oauth_to_u_sers_for_calendars">
+  <% @add_google_oauth_to_u_sers_for_calendars.each do |add_google_oauth_to_u_sers_for_calendar| %>
+    <%= render add_google_oauth_to_u_sers_for_calendar %>
+    <p>
+      <%= link_to "Show this add google oauth to u sers for calendar", add_google_oauth_to_u_sers_for_calendar %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New add google oauth to u sers for calendar", new_add_google_oauth_to_u_sers_for_calendar_path %>
