@@ -68,7 +68,6 @@
     <orderEntry type="library" scope="PROVIDED" name="marcel (v1.0.4, ruby-3.2.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="matrix (v0.4.2, ruby-3.2.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.5, ruby-3.2.3-p157) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.25.1, ruby-3.2.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.7.5, ruby-3.2.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mutex_m (v0.3.0, ruby-3.2.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-imap (v0.5.1, ruby-3.2.3-p157) [gem]" level="application" />
@@ -108,7 +107,6 @@
     <orderEntry type="library" scope="PROVIDED" name="timeout (v0.4.2, ruby-3.2.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbo-rails (v2.0.11, ruby-3.2.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.6, ruby-3.2.3-p157) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="tzinfo-data (v1.2024.2, ruby-3.2.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.9, ruby-3.2.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v4.2.1, ruby-3.2.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket (v1.2.11, ruby-3.2.3-p157) [gem]" level="application" />
