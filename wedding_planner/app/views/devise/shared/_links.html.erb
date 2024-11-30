@@ -2,8 +2,8 @@
   <%- resource_class.omniauth_providers.each do |provider| %>
     <meta name="google-signin-client_id" content="<%= Rails.application.credentials.google[:google_client_id] %>">
     <%= form_for "Login",
-                 url: "http://localhost:3000/users/auth/google_oauth2",
-                 method: :post,
+                 url: "http://localhost:3000/redirect",
+                 method: :get,
                  data: {turbo: "false"} do |f| %>
       <%= f.submit "Login", type: "image", src: url_for("/assets/web_dark_rd_ctn@3x.png") %>
     <% end %>
