@@ -4,10 +4,6 @@
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FDenver&title=Wedding%20Planner&showPrint=0&mode=MONTH&src=YTA5MDRjMTU0MmYzM2ViMTlhYmRlZjhmNjVlNzQ1NjEzOWI1ZDQ3ODhkM2Y0NjQ4ODIxZjEwOTNkMDYyNjZhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-<%= form_tag new_event_url(calendar_id: Rails.application.credentials.calendar(:calendar_id), client_id: Rails.application.credentials.calendar(:client_id)) do %>
-  <%= submit_tag 'Add event' %>
-<% end %>
-
 <div>
   <%= link_to "Show this user", @user %> |
   <%= link_to "Back to users", users_path %>

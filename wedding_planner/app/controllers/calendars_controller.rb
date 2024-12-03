@@ -60,10 +60,10 @@ class CalendarsController < ApplicationController
     today = Date.today
 
     event = Google::Apis::CalendarV3::Event.new(
-                                                  start: Google::Apis::CalendarV3::EventDateTime.new(date: today),
-                                                  end: Google::Apis::CalendarV3::EventDateTime.new(date: today + 1),
-                                                  summary: 'New event!'
-                                                )
+      summary: 'Another Test!',
+      start: Google::Apis::CalendarV3::EventDateTime.new(date: today),
+      end: Google::Apis::CalendarV3::EventDateTime.new(date: today + 1),
+      )
 
     service.insert_event(params[:calendar_id], event)
 
@@ -126,3 +126,38 @@ class CalendarsController < ApplicationController
     }
   end
 end
+# def get_event task
+#   attendees = task[:members].split(',').map{ |t| {email: t.strip} }
+#   event = Google::Apis::CalendarV3::Event.new({
+#                                                 summary: task[:title],
+#                                                 location: '800 Howard St., San Francisco, CA 94103',
+#                                                 description: task[:description],
+#                                                 start: {
+#                                                   date_time: Time.new(task['start_date(1i)'],task['start_date(2i)'],task['start_date(3i)'],task['start_date(4i)'],task['start_date(5i)']).to_datetime.rfc3339,
+#                                                   time_zone: "Asia/Kolkata"
+#                                                   # date_time: '2019-09-07T09:00:00-07:00',
+#                                                   # time_zone: 'Asia/Kolkata',
+#                                                 },
+#                                                 end: {
+#                                                   date_time: Time.new(task['end_date(1i)'],task['end_date(2i)'],task['end_date(3i)'],task['end_date(4i)'],task['end_date(5i)']).to_datetime.rfc3339,
+#                                                   time_zone: "Asia/Kolkata"
+#                                                 },
+#                                                 attendees: attendees,
+#                                                 reminders: {
+#                                                   use_default: false,
+#                                                   overrides: [
+#                                                     Google::Apis::CalendarV3::EventReminder.new(reminder_method:"popup", minutes: 10),
+#                                                     Google::Apis::CalendarV3::EventReminder.new(reminder_method:"email", minutes: 20)
+#                                                   ]
+#                                                 },
+#                                                 notification_settings: {
+#                                                   notifications: [
+#                                                     {type: 'event_creation', method: 'email'},
+#                                                     {type: 'event_change', method: 'email'},
+#                                                     {type: 'event_cancellation', method: 'email'},
+#                                                     {type: 'event_response', method: 'email'}
+#                                                   ]
+#                                                 }, 'primary': true
+#                                               })
+# end
+# end
