@@ -5,7 +5,9 @@
 
 <div>
   <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
+  <%= link_to "Back to users", users_path %> |
+  <%= link_to "Go to calendar", "http://localhost:3000/redirect"  %>
+
 
   <%= button_to "Destroy this user", @user, method: :delete %>
 </div>
