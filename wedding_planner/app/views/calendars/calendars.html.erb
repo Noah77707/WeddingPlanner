@@ -2,14 +2,14 @@
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FDenver&title=Wedding%20Planner&showPrint=0&mode=MONTH&src=YTA5MDRjMTU0MmYzM2ViMTlhYmRlZjhmNjVlNzQ1NjEzOWI1ZDQ3ODhkM2Y0NjQ4ODIxZjEwOTNkMDYyNjZhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-<%= form_for "Login",
+<%= form_for "Events",
              url: "http://localhost:3000/events/a0904c1542f33eb19abdef8f65e7456139b5d4788d3f4648821f1093d06266ae@group.calendar.google.com",
              method: :get,
              data: {turbo: "false"} do |f| %>
   <%= f.submit "See All Events"%>
 <% end %>
 
-<%= form_for "Login",
+<%= form_for "New_Events",
              url: "http://localhost:3000/events/a0904c1542f33eb19abdef8f65e7456139b5d4788d3f4648821f1093d06266ae@group.calendar.google.com",
              method: :post,
              data: {turbo: "false"} do |f| %>
