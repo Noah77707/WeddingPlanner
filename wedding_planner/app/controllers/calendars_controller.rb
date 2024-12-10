@@ -1,6 +1,10 @@
 class CalendarsController < ApplicationController
   before_action :set_user, only: [:calendars, :events, :new_event]
 
+  def index
+    @calendars = Calendar.all
+  end
+
   # Redirect to Google OAuth authorization page
   def redirect
 

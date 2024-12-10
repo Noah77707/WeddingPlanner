@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_one :calendar
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          # for Google OmniAuth
